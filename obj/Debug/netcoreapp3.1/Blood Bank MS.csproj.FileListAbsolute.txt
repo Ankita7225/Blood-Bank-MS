@@ -1,0 +1,16 @@
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.csproj.AssemblyReference.cache
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Dashboard.resources
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.view_doner.resources
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Donor.resources
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.History.resources
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Hospital.resources
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.login.resources
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Patient.resources
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Properties.Resources.resources
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.splash.resources
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.csproj.GenerateResource.cache
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.AssemblyInfoInputs.cache
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.AssemblyInfo.cs
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.csproj.CoreCompileInputs.cache
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.frmDashboard.resources
