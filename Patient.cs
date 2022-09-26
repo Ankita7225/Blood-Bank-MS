@@ -40,7 +40,7 @@ namespace Blood_Bank_MS
         private void btnSubmit_Click(object sender, EventArgs e)
         {
 
-            if (txtName.Text == "" || txtAddress.Text == "" || txtPhoneNo.Text == "" || txtAge.Text == "" || txtTotalDonation.Text == "" || cmbGender.SelectedIndex == -1 || cmbBloodGroup.SelectedIndex == -1)
+            if (txtName.Text == "" || txtAddress.Text == "" || txtPhoneNo.Text == "" || txtAge.Text == "" || txtDateOfReceivingBlood.Text == ""|| txtBagNo.Text == "" || cmbGender.SelectedIndex == -1 || cmbBloodGroup.SelectedIndex == -1)
             {
                 MessageBox.Show("Missing Information");
             }
@@ -48,13 +48,13 @@ namespace Blood_Bank_MS
             {
                 try
                 {
-                    string query = " insert into Donor values(' " + txtName.Text + " ',' " + txtAddress.Text + " ','" + cmbBloodGroup.SelectedIndex.ToString() + "','" + txtPhoneNo.Text + "','" + txtAge.Text + "','" + cmbGender.SelectedIndex.ToString() + ",' " + txtTotalDonation.Text + " ')";
+                    string query = " insert into PatientTb values(' " + txtName.Text + " ',' " + txtAddress.Text + " ','" + cmbBloodGroup.SelectedIndex.ToString() + "','" + txtPhoneNo.Text + "','" + txtAge.Text + "','" + cmbGender.SelectedIndex.ToString() + ",' " + txtDateOfReceivingBlood.Text + " ',' " + txtBagNo.Text + " ')";
                     Con.Open();
-                    cmd = new OleDbConnection(query, Con);
+                    cmd = new OleDbConnection  (query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Successfully Saved");
                     Con.Close();
-                    Reset();
+                    
                 }
                 catch (Exception Ex)
                 {
