@@ -46,7 +46,7 @@ namespace Blood_Bank_MS
                 {
                     string query = " insert into Donor values(' " + txtName.Text + " ',' " + txtAddress.Text + " ','" + cmbBloodGroup.SelectedIndex.ToString() + "','" + txtPhoneNo.Text + "','" + txtAge.Text + "','" + cmbGender.SelectedIndex.ToString()+ ",' " + txtTotalDonation.Text + " ')";
                     Con.Open();
-                    cmd = new OleDbConnection(query, Con);
+                    cmd = new OleDbCommand( query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Successfully Saved");
                     Con.Close();

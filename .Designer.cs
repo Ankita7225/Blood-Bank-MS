@@ -41,6 +41,19 @@ namespace Blood_Bank_MS
             this.label1 = new System.Windows.Forms.Label();
             this.USERNAME = new System.Windows.Forms.Label();
             this.DonorDGV = new System.Windows.Forms.DataGridView();
+            this.lblName = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.lblBloodGroup = new System.Windows.Forms.Label();
+            this.cmbBloodGroup = new System.Windows.Forms.ComboBox();
+            this.lblPhoneNo = new System.Windows.Forms.Label();
+            this.txtPhoneNo = new System.Windows.Forms.TextBox();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.txtAge = new System.Windows.Forms.TextBox();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.cmbGender = new System.Windows.Forms.ComboBox();
+            this.lblTotalDonations = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DonorDGV)).BeginInit();
@@ -175,17 +188,145 @@ namespace Blood_Bank_MS
             // 
             this.DonorDGV.BackgroundColor = System.Drawing.SystemColors.Control;
             this.DonorDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DonorDGV.Location = new System.Drawing.Point(158, 237);
+            this.DonorDGV.Location = new System.Drawing.Point(178, 273);
             this.DonorDGV.Name = "DonorDGV";
             this.DonorDGV.RowTemplate.Height = 25;
-            this.DonorDGV.Size = new System.Drawing.Size(743, 328);
+            this.DonorDGV.Size = new System.Drawing.Size(690, 292);
             this.DonorDGV.TabIndex = 3;
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblName.Location = new System.Drawing.Point(177, 102);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(52, 21);
+            this.lblName.TabIndex = 5;
+            this.lblName.Text = "Name";
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(235, 104);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(208, 23);
+            this.txtName.TabIndex = 11;
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAddress.Location = new System.Drawing.Point(163, 156);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(66, 21);
+            this.lblAddress.TabIndex = 12;
+            this.lblAddress.Text = "Address";
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(235, 158);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(208, 23);
+            this.txtAddress.TabIndex = 13;
+            // 
+            // lblBloodGroup
+            // 
+            this.lblBloodGroup.AutoSize = true;
+            this.lblBloodGroup.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblBloodGroup.Location = new System.Drawing.Point(461, 106);
+            this.lblBloodGroup.Name = "lblBloodGroup";
+            this.lblBloodGroup.Size = new System.Drawing.Size(98, 21);
+            this.lblBloodGroup.TabIndex = 14;
+            this.lblBloodGroup.Text = "Blood Group";
+            // 
+            // cmbBloodGroup
+            // 
+            this.cmbBloodGroup.FormattingEnabled = true;
+            this.cmbBloodGroup.Location = new System.Drawing.Point(565, 108);
+            this.cmbBloodGroup.Name = "cmbBloodGroup";
+            this.cmbBloodGroup.Size = new System.Drawing.Size(124, 23);
+            this.cmbBloodGroup.TabIndex = 15;
+            // 
+            // lblPhoneNo
+            // 
+            this.lblPhoneNo.AutoSize = true;
+            this.lblPhoneNo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPhoneNo.Location = new System.Drawing.Point(477, 156);
+            this.lblPhoneNo.Name = "lblPhoneNo";
+            this.lblPhoneNo.Size = new System.Drawing.Size(82, 21);
+            this.lblPhoneNo.TabIndex = 16;
+            this.lblPhoneNo.Text = "Phone No.";
+            // 
+            // txtPhoneNo
+            // 
+            this.txtPhoneNo.Location = new System.Drawing.Point(565, 158);
+            this.txtPhoneNo.Name = "txtPhoneNo";
+            this.txtPhoneNo.Size = new System.Drawing.Size(208, 23);
+            this.txtPhoneNo.TabIndex = 17;
+            // 
+            // lblAge
+            // 
+            this.lblAge.AutoSize = true;
+            this.lblAge.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAge.Location = new System.Drawing.Point(762, 110);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(37, 21);
+            this.lblAge.TabIndex = 18;
+            this.lblAge.Text = "Age";
+            // 
+            // txtAge
+            // 
+            this.txtAge.Location = new System.Drawing.Point(805, 108);
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(98, 23);
+            this.txtAge.TabIndex = 19;
+            // 
+            // lblGender
+            // 
+            this.lblGender.AutoSize = true;
+            this.lblGender.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblGender.Location = new System.Drawing.Point(168, 213);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(61, 21);
+            this.lblGender.TabIndex = 20;
+            this.lblGender.Text = "Gender";
+            // 
+            // cmbGender
+            // 
+            this.cmbGender.FormattingEnabled = true;
+            this.cmbGender.Location = new System.Drawing.Point(235, 215);
+            this.cmbGender.Name = "cmbGender";
+            this.cmbGender.Size = new System.Drawing.Size(124, 23);
+            this.cmbGender.TabIndex = 21;
+            // 
+            // lblTotalDonations
+            // 
+            this.lblTotalDonations.AutoSize = true;
+            this.lblTotalDonations.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTotalDonations.Location = new System.Drawing.Point(417, 289);
+            this.lblTotalDonations.Name = "lblTotalDonations";
+            this.lblTotalDonations.Size = new System.Drawing.Size(117, 21);
+            this.lblTotalDonations.TabIndex = 22;
+            this.lblTotalDonations.Text = "Total Donations";
             // 
             // view_doner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(951, 598);
+            this.Controls.Add(this.lblTotalDonations);
+            this.Controls.Add(this.cmbGender);
+            this.Controls.Add(this.lblGender);
+            this.Controls.Add(this.txtAge);
+            this.Controls.Add(this.lblAge);
+            this.Controls.Add(this.txtPhoneNo);
+            this.Controls.Add(this.lblPhoneNo);
+            this.Controls.Add(this.cmbBloodGroup);
+            this.Controls.Add(this.lblBloodGroup);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.lblAddress);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.lblName);
             this.Controls.Add(this.DonorDGV);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -199,6 +340,7 @@ namespace Blood_Bank_MS
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DonorDGV)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -216,5 +358,18 @@ namespace Blood_Bank_MS
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label USERNAME;
         private System.Windows.Forms.DataGridView DonorDGV;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.Label lblBloodGroup;
+        private System.Windows.Forms.ComboBox cmbBloodGroup;
+        private System.Windows.Forms.Label lblPhoneNo;
+        private System.Windows.Forms.TextBox txtPhoneNo;
+        private System.Windows.Forms.Label lblAge;
+        private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.ComboBox cmbGender;
+        private System.Windows.Forms.Label lblTotalDonations;
     }
 }
