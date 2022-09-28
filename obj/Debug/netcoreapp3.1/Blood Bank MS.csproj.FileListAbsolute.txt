@@ -1,6 +1,4 @@
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.csproj.AssemblyReference.cache
-C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Dashboard.resources
-C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.view_doner.resources
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Donor.resources
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.History.resources
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Hospital.resources
@@ -14,3 +12,39 @@ C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.AssemblyInfoInputs.cache
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.AssemblyInfo.cs
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.csproj.CoreCompileInputs.cache
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.frmDashboard.resources
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.BloodStock.resources
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\Blood Bank MS.exe
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\Blood Bank MS.deps.json
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\Blood Bank MS.runtimeconfig.json
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\Blood Bank MS.runtimeconfig.dev.json
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\Blood Bank MS.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\Blood Bank MS.pdb
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\System.Data.OleDb.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.OleDb.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.csproj.CopyComplete
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.dll
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.pdb
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.genruntimeconfig.cache
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Main.resources
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Event.resources
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Payment.resources

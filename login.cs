@@ -47,28 +47,7 @@ namespace Blood_Bank_MS
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            OleDbConnection connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\admin\Documents\BbmsDB.accdb");
-            Con.Open();
-
-            OleDbDataAdapter da = new OleDbDataAdapter("Select Count(*)from LoginTb where Username=' " + txtUsername.Text + "'And Password='" + txtPassword.Text + "' ", Con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            if(dt.Rows[0][0].ToString()=="1")
-            {
-                MessageBox.Show("Welcome to Dashboard", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide();
-                frmDashboard d2 = new frmDashboard();
-                d2.ShowDialog();
-                Con.Close();
-            }
-            else
-            {
-                MessageBox.Show("Login Failed. Try Again.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+       
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -80,9 +59,26 @@ namespace Blood_Bank_MS
 
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
+            //OleDbConnection connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\admin\Documents\BbmsDB.accdb");
+            //Con.Open();
 
+            //OleDbDataAdapter da = new OleDbDataAdapter("Select Count(*)from LoginTb where Username=' " + txtUsername.Text + "'And Password='" + txtPassword.Text + "' ", Con);
+            //DataTable dt = new DataTable();
+            //da.Fill(dt);
+            if (txtUsername.Text == "admin" && txtPassword.Text == "admin")
+            {
+                MessageBox.Show("Welcome to Dashboard", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Hide();
+                Main frm=new Main();
+                frm.ShowDialog();
+                Con.Close();
+            }
+            else
+            {
+                MessageBox.Show("Login Failed. Try Again.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
