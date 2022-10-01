@@ -44,13 +44,17 @@ namespace Blood_Bank_MS
             this.lblTotalDonations = new System.Windows.Forms.Label();
             this.txtTotalDonation = new System.Windows.Forms.TextBox();
             this.btnSubmit = new System.Windows.Forms.Button();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.txtDate = new System.Windows.Forms.TextBox();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblName.Location = new System.Drawing.Point(102, 120);
+            this.lblName.Location = new System.Drawing.Point(57, 99);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(52, 21);
             this.lblName.TabIndex = 4;
@@ -60,7 +64,7 @@ namespace Blood_Bank_MS
             // 
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAddress.Location = new System.Drawing.Point(29, 318);
+            this.lblAddress.Location = new System.Drawing.Point(57, 186);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(66, 21);
             this.lblAddress.TabIndex = 5;
@@ -70,7 +74,7 @@ namespace Blood_Bank_MS
             // 
             this.lblPhoneNo.AutoSize = true;
             this.lblPhoneNo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPhoneNo.Location = new System.Drawing.Point(296, 318);
+            this.lblPhoneNo.Location = new System.Drawing.Point(48, 305);
             this.lblPhoneNo.Name = "lblPhoneNo";
             this.lblPhoneNo.Size = new System.Drawing.Size(82, 21);
             this.lblPhoneNo.TabIndex = 6;
@@ -80,7 +84,7 @@ namespace Blood_Bank_MS
             // 
             this.lblAge.AutoSize = true;
             this.lblAge.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAge.Location = new System.Drawing.Point(710, 120);
+            this.lblAge.Location = new System.Drawing.Point(555, 99);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(37, 21);
             this.lblAge.TabIndex = 7;
@@ -98,7 +102,7 @@ namespace Blood_Bank_MS
             "O-",
             "AB+",
             "AB-"});
-            this.cmbBloodGroup.Location = new System.Drawing.Point(437, 182);
+            this.cmbBloodGroup.Location = new System.Drawing.Point(347, 134);
             this.cmbBloodGroup.Name = "cmbBloodGroup";
             this.cmbBloodGroup.Size = new System.Drawing.Size(124, 23);
             this.cmbBloodGroup.TabIndex = 8;
@@ -107,7 +111,7 @@ namespace Blood_Bank_MS
             // 
             this.lblBloodGroup.AutoSize = true;
             this.lblBloodGroup.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblBloodGroup.Location = new System.Drawing.Point(431, 120);
+            this.lblBloodGroup.Location = new System.Drawing.Point(347, 99);
             this.lblBloodGroup.Name = "lblBloodGroup";
             this.lblBloodGroup.Size = new System.Drawing.Size(98, 21);
             this.lblBloodGroup.TabIndex = 9;
@@ -115,28 +119,29 @@ namespace Blood_Bank_MS
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(102, 182);
+            this.txtName.Location = new System.Drawing.Point(57, 134);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(208, 23);
             this.txtName.TabIndex = 10;
+            this.txtName.Text = "A";
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(29, 361);
+            this.txtAddress.Location = new System.Drawing.Point(48, 238);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(208, 23);
             this.txtAddress.TabIndex = 11;
             // 
             // txtPhoneNo
             // 
-            this.txtPhoneNo.Location = new System.Drawing.Point(296, 361);
+            this.txtPhoneNo.Location = new System.Drawing.Point(48, 346);
             this.txtPhoneNo.Name = "txtPhoneNo";
             this.txtPhoneNo.Size = new System.Drawing.Size(208, 23);
             this.txtPhoneNo.TabIndex = 12;
             // 
             // txtAge
             // 
-            this.txtAge.Location = new System.Drawing.Point(700, 182);
+            this.txtAge.Location = new System.Drawing.Point(555, 134);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(98, 23);
             this.txtAge.TabIndex = 13;
@@ -145,7 +150,7 @@ namespace Blood_Bank_MS
             // 
             this.lblGender.AutoSize = true;
             this.lblGender.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblGender.Location = new System.Drawing.Point(700, 327);
+            this.lblGender.Location = new System.Drawing.Point(567, 186);
             this.lblGender.Name = "lblGender";
             this.lblGender.Size = new System.Drawing.Size(61, 21);
             this.lblGender.TabIndex = 14;
@@ -157,7 +162,7 @@ namespace Blood_Bank_MS
             this.cmbGender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.cmbGender.Location = new System.Drawing.Point(700, 361);
+            this.cmbGender.Location = new System.Drawing.Point(567, 238);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Size = new System.Drawing.Size(124, 23);
             this.cmbGender.TabIndex = 15;
@@ -166,7 +171,7 @@ namespace Blood_Bank_MS
             // 
             this.lblTotalDonations.AutoSize = true;
             this.lblTotalDonations.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTotalDonations.Location = new System.Drawing.Point(548, 318);
+            this.lblTotalDonations.Location = new System.Drawing.Point(347, 186);
             this.lblTotalDonations.Name = "lblTotalDonations";
             this.lblTotalDonations.Size = new System.Drawing.Size(117, 21);
             this.lblTotalDonations.TabIndex = 16;
@@ -174,27 +179,65 @@ namespace Blood_Bank_MS
             // 
             // txtTotalDonation
             // 
-            this.txtTotalDonation.Location = new System.Drawing.Point(548, 361);
+            this.txtTotalDonation.Location = new System.Drawing.Point(347, 238);
             this.txtTotalDonation.Name = "txtTotalDonation";
-            this.txtTotalDonation.Size = new System.Drawing.Size(81, 23);
+            this.txtTotalDonation.Size = new System.Drawing.Size(124, 23);
             this.txtTotalDonation.TabIndex = 17;
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(418, 444);
+            this.btnSubmit.Location = new System.Drawing.Point(595, 356);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(75, 23);
             this.btnSubmit.TabIndex = 18;
-            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.Text = "SUBMIT";
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Location = new System.Drawing.Point(347, 311);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(97, 15);
+            this.lblDate.TabIndex = 19;
+            this.lblDate.Text = "Date of Donation";
+            // 
+            // txtDate
+            // 
+            this.txtDate.Location = new System.Drawing.Point(347, 346);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(100, 23);
+            this.txtDate.TabIndex = 20;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(318, 433);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 21;
+            this.btnDelete.Text = "DELETE";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(517, 442);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 22;
+            this.btnUpdate.Text = "UPDATE";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
             // Donor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(945, 584);
+            this.ClientSize = new System.Drawing.Size(855, 524);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.txtDate);
+            this.Controls.Add(this.lblDate);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtTotalDonation);
             this.Controls.Add(this.lblTotalDonations);
@@ -210,7 +253,7 @@ namespace Blood_Bank_MS
             this.Controls.Add(this.lblPhoneNo);
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.lblName);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Donor";
             this.Text = "Donor";
             this.ResumeLayout(false);
@@ -234,5 +277,9 @@ namespace Blood_Bank_MS
         private System.Windows.Forms.Label lblTotalDonations;
         private System.Windows.Forms.TextBox txtTotalDonation;
         private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.TextBox txtDate;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }

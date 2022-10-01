@@ -39,10 +39,10 @@ namespace Blood_Bank_MS
             this.HOSPITAL = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnDashboard = new System.Windows.Forms.Button();
             this.panelFooter = new System.Windows.Forms.Panel();
             this.panelBody = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panelSidebar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +65,7 @@ namespace Blood_Bank_MS
             this.panelSidebar.Controls.Add(this.HOSPITAL);
             this.panelSidebar.Controls.Add(this.button3);
             this.panelSidebar.Controls.Add(this.button2);
-            this.panelSidebar.Controls.Add(this.button1);
+            this.panelSidebar.Controls.Add(this.btnDashboard);
             this.panelSidebar.Controls.Add(this.panel5);
             this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSidebar.Location = new System.Drawing.Point(0, 44);
@@ -96,7 +96,7 @@ namespace Blood_Bank_MS
             this.Event.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Event.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Event.ForeColor = System.Drawing.Color.White;
-            this.Event.Location = new System.Drawing.Point(0, 352);
+            this.Event.Location = new System.Drawing.Point(0, 357);
             this.Event.Name = "Event";
             this.Event.Size = new System.Drawing.Size(200, 38);
             this.Event.TabIndex = 8;
@@ -112,7 +112,7 @@ namespace Blood_Bank_MS
             this.history.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.history.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.history.ForeColor = System.Drawing.Color.White;
-            this.history.Location = new System.Drawing.Point(0, 314);
+            this.history.Location = new System.Drawing.Point(0, 319);
             this.history.Name = "history";
             this.history.Size = new System.Drawing.Size(200, 38);
             this.history.TabIndex = 7;
@@ -128,7 +128,7 @@ namespace Blood_Bank_MS
             this.Payment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Payment.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Payment.ForeColor = System.Drawing.Color.White;
-            this.Payment.Location = new System.Drawing.Point(0, 276);
+            this.Payment.Location = new System.Drawing.Point(0, 281);
             this.Payment.Name = "Payment";
             this.Payment.Size = new System.Drawing.Size(200, 38);
             this.Payment.TabIndex = 6;
@@ -144,7 +144,7 @@ namespace Blood_Bank_MS
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(0, 238);
+            this.button5.Location = new System.Drawing.Point(0, 243);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(200, 38);
             this.button5.TabIndex = 5;
@@ -160,7 +160,7 @@ namespace Blood_Bank_MS
             this.HOSPITAL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HOSPITAL.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.HOSPITAL.ForeColor = System.Drawing.Color.White;
-            this.HOSPITAL.Location = new System.Drawing.Point(0, 200);
+            this.HOSPITAL.Location = new System.Drawing.Point(0, 205);
             this.HOSPITAL.Name = "HOSPITAL";
             this.HOSPITAL.Size = new System.Drawing.Size(200, 38);
             this.HOSPITAL.TabIndex = 4;
@@ -176,7 +176,7 @@ namespace Blood_Bank_MS
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 162);
+            this.button3.Location = new System.Drawing.Point(0, 167);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(200, 38);
             this.button3.TabIndex = 3;
@@ -192,7 +192,7 @@ namespace Blood_Bank_MS
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 124);
+            this.button2.Location = new System.Drawing.Point(0, 129);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(200, 38);
             this.button2.TabIndex = 2;
@@ -200,30 +200,21 @@ namespace Blood_Bank_MS
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btnDashboard
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(115)))), ((int)(((byte)(152)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 86);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 38);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Dashbord";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(32)))), ((int)(((byte)(60)))));
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 86);
-            this.panel5.TabIndex = 0;
+            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(115)))), ((int)(((byte)(152)))));
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.Location = new System.Drawing.Point(0, 91);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(200, 38);
+            this.btnDashboard.TabIndex = 1;
+            this.btnDashboard.Text = "Dashbord";
+            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.button1_Click);
             // 
             // panelFooter
             // 
@@ -240,6 +231,15 @@ namespace Blood_Bank_MS
             this.panelBody.Name = "panelBody";
             this.panelBody.Size = new System.Drawing.Size(773, 501);
             this.panelBody.TabIndex = 3;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(32)))), ((int)(((byte)(60)))));
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(200, 91);
+            this.panel5.TabIndex = 0;
             // 
             // Main
             // 
@@ -269,9 +269,9 @@ namespace Blood_Bank_MS
         private System.Windows.Forms.Button HOSPITAL;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Panel panelFooter;
         private System.Windows.Forms.Panel panelBody;
+        private System.Windows.Forms.Panel panel5;
     }
 }

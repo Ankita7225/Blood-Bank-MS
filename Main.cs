@@ -17,7 +17,7 @@ namespace Blood_Bank_MS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmDashboard form = new frmDashboard();
+            Dashborad form = new Dashborad();
             panelBody.Controls.Clear();
             form.TopLevel = false;
             form.Dock = DockStyle.Fill;

@@ -1,4 +1,3 @@
-C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.csproj.AssemblyReference.cache
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Donor.resources
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.History.resources
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Hospital.resources
@@ -11,7 +10,6 @@ C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.GeneratedMSBuildEditorCon
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.AssemblyInfoInputs.cache
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.AssemblyInfo.cs
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.csproj.CoreCompileInputs.cache
-C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.frmDashboard.resources
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.BloodStock.resources
 C:\Blood Bank MS\bin\Debug\netcoreapp3.1\Blood Bank MS.exe
 C:\Blood Bank MS\bin\Debug\netcoreapp3.1\Blood Bank MS.deps.json
@@ -48,3 +46,6 @@ C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.genruntimeconfig.cache
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Main.resources
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Event.resources
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Payment.resources
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Dashborad.resources
+C:\Blood Bank MS\bin\Debug\netcoreapp3.1\Blood Bank MS.dll.config
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.csproj.AssemblyReference.cache
