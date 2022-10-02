@@ -1,3 +1,9 @@
 is_global = true
+build_property.ApplicationManifest = 
+build_property.StartupObject = 
+build_property.ApplicationDefaultFont = 
+build_property.ApplicationHighDpiMode = 
+build_property.ApplicationUseCompatibleTextRendering = 
+build_property.ApplicationVisualStyles = 
 build_property.RootNamespace = Blood_Bank_MS
-build_property.ProjectDir = C:\Users\care\OneDrive\Documents\GitHub\Blood-Bank-MS\
+build_property.ProjectDir = C:\Blood Bank MS\
