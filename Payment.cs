@@ -14,5 +14,12 @@ namespace Blood_Bank_MS
         {
             InitializeComponent();
         }
+
+        private void Payment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
+

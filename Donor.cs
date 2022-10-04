@@ -124,6 +124,15 @@ namespace Blood_Bank_MS
                     fillGrid();
                     tabControl1.TabPages.Remove(tabPage2);
                     tabControl1.TabPages.Add(tabPage1);
+                    SqlCommand cmd2 = new SqlCommand("Select bloodSt from BStock where BloodGroup='" + cmbBloodGroup.Text + "'", con);
+
+                    SqlDataReader reader = cmd2.ExecuteReader();
+                    int Stock = (int)reader[0];
+                    Stock += Convert.ToInt32(cmbBloodGroup.Text);
+
+                    cmd2 = new SqlCommand($"Update BStock set BloodSt={Stock} where BloodGroup='" + cmbBloodGroup.Text + "'", con);
+                    cmd2.ExecuteNonQuery();
+
 
 
                 }
@@ -159,6 +168,15 @@ namespace Blood_Bank_MS
                         fillGrid();
                         tabControl1.TabPages.Remove(tabPage2);
                         tabControl1.TabPages.Add(tabPage1);
+                        SqlCommand cmd2 = new SqlCommand("Select bloodSt from BStock where BloodGroup='" + cmbBloodGroup.Text + "'",con);
+
+                        SqlDataReader reader = cmd2.ExecuteReader();
+                        int Stock= (int)reader[0];
+                        Stock+=Convert.ToInt32(cmbBloodGroup.Text);
+
+                        cmd2 =  new SqlCommand($"Update BStock set BloodSt={Stock} where BloodGroup='"+cmbBloodGroup.Text+"'",con);
+                        cmd2.ExecuteNonQuery();
+
 
 
                     }
@@ -172,6 +190,25 @@ namespace Blood_Bank_MS
 
 
             }   
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                SqlCommand cmd = new SqlCommand("Delete from Donor values(' " + txtName.Text + " ',' " + txtAddress.Text + " ','" + cmbBloodGroup.Text + "','" + txtPhoneNo.Text + "','" + txtAge.Text + "','" + cmbGender.Text + "',' " + txtTotalDonation.Text + " ','" + txtDate.Text + "')", con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("data deleted");
+                con.Close();
+                fillGrid();
+                tabControl1.TabPages.Remove(tabPage2);
+                tabControl1.TabPages.Add(tabPage1);
+            }
+            catch
+            {
+                MessageBox.Show("not deleted");
+            }
         }
     }
 }

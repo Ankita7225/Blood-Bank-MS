@@ -40,9 +40,9 @@ namespace Blood_Bank_MS
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panelFooter = new System.Windows.Forms.Panel();
             this.panelBody = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panelSidebar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -216,6 +216,15 @@ namespace Blood_Bank_MS
             this.btnDashboard.UseVisualStyleBackColor = true;
             this.btnDashboard.Click += new System.EventHandler(this.button1_Click);
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(32)))), ((int)(((byte)(60)))));
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(200, 91);
+            this.panel5.TabIndex = 0;
+            // 
             // panelFooter
             // 
             this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -232,15 +241,6 @@ namespace Blood_Bank_MS
             this.panelBody.Size = new System.Drawing.Size(773, 501);
             this.panelBody.TabIndex = 3;
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(32)))), ((int)(((byte)(60)))));
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 91);
-            this.panel5.TabIndex = 0;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -251,6 +251,7 @@ namespace Blood_Bank_MS
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panelFooter);
             this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             this.panelSidebar.ResumeLayout(false);
             this.ResumeLayout(false);

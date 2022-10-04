@@ -40,12 +40,12 @@ namespace Blood_Bank_MS
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.USERNAME = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.BloodstockdataGridView = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BloodstockdataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -173,14 +173,14 @@ namespace Blood_Bank_MS
             this.USERNAME.TabIndex = 1;
             this.USERNAME.Text = "Hospitals";
             // 
-            // dataGridView1
+            // BloodstockdataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(175, 195);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(712, 349);
-            this.dataGridView1.TabIndex = 6;
+            this.BloodstockdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.BloodstockdataGridView.Location = new System.Drawing.Point(175, 195);
+            this.BloodstockdataGridView.Name = "BloodstockdataGridView";
+            this.BloodstockdataGridView.RowTemplate.Height = 25;
+            this.BloodstockdataGridView.Size = new System.Drawing.Size(712, 349);
+            this.BloodstockdataGridView.TabIndex = 6;
             // 
             // label7
             // 
@@ -195,6 +195,15 @@ namespace Blood_Bank_MS
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "A+",
+            "A-",
+            "B+",
+            "B-",
+            "O+",
+            "O-",
+            "AB+",
+            "AB-"});
             this.comboBox1.Location = new System.Drawing.Point(249, 151);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 23);
@@ -207,7 +216,7 @@ namespace Blood_Bank_MS
             this.ClientSize = new System.Drawing.Size(934, 576);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.BloodstockdataGridView);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -218,7 +227,7 @@ namespace Blood_Bank_MS
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BloodstockdataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,7 +246,7 @@ namespace Blood_Bank_MS
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label USERNAME;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView BloodstockdataGridView;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox1;
     }
