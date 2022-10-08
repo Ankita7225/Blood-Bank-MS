@@ -28,13 +28,13 @@
     <Compile Update="Main.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="New Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Patient.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Payment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="splash.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

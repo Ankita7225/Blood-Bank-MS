@@ -29,376 +29,429 @@ namespace Blood_Bank_MS
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.USERNAME = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btnedit = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnadd = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblBloodGroup = new System.Windows.Forms.Label();
-            this.lblGender = new System.Windows.Forms.Label();
-            this.lblPhoneNo = new System.Windows.Forms.Label();
-            this.lblAge = new System.Windows.Forms.Label();
-            this.lblAddress = new System.Windows.Forms.Label();
-            this.lblBagNo = new System.Windows.Forms.Label();
-            this.lblDateOfReceivingBlood = new System.Windows.Forms.Label();
-            this.txtAddress = new System.Windows.Forms.TextBox();
-            this.txtAge = new System.Windows.Forms.TextBox();
-            this.txtDateOfReceivingBlood = new System.Windows.Forms.TextBox();
-            this.txtPhoneNo = new System.Windows.Forms.TextBox();
-            this.txtBagNo = new System.Windows.Forms.TextBox();
+            this.txtid = new System.Windows.Forms.TextBox();
+            this.lblid = new System.Windows.Forms.Label();
+            this.btncancle = new System.Windows.Forms.Button();
+            this.txtbagno = new System.Windows.Forms.TextBox();
+            this.lblbagno = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.txtdateofReceivinigblood = new System.Windows.Forms.TextBox();
+            this.lblDateofReceivinig = new System.Windows.Forms.Label();
             this.cmbGender = new System.Windows.Forms.ComboBox();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.txtAge = new System.Windows.Forms.TextBox();
+            this.txtPhoneNo = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtname = new System.Windows.Forms.TextBox();
+            this.lblBloodGroup = new System.Windows.Forms.Label();
             this.cmbBloodGroup = new System.Windows.Forms.ComboBox();
-            this.btnSubmit = new System.Windows.Forms.Button();
-            this.panel2.SuspendLayout();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.lblPhoneNo = new System.Windows.Forms.Label();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel2
+            // tabControl1
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.USERNAME);
-            this.panel2.Location = new System.Drawing.Point(0, 48);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(140, 539);
-            this.panel2.TabIndex = 2;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(949, 581);
+            this.tabControl1.TabIndex = 1;
             // 
-            // label6
+            // tabPage1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(14, 205);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 20);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Patient Details";
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.button3);
+            this.tabPage1.Controls.Add(this.btnedit);
+            this.tabPage1.Controls.Add(this.btnDelete);
+            this.tabPage1.Controls.Add(this.btnadd);
+            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage1.Size = new System.Drawing.Size(941, 553);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Patient Details";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // button1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(18, 87);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 20);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Donor Details";
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(829, 194);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 45;
+            this.button1.Text = "Edit";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label9
+            // button2
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial Narrow", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(37, 147);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(51, 20);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Patient";
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(829, 269);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 44;
+            this.button2.Text = "DELETE";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // button3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(34, 322);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "History";
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Location = new System.Drawing.Point(829, 121);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 43;
+            this.button3.Text = "Add New";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // btnedit
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(24, 384);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(83, 20);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "Blood Stock";
+            this.btnedit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnedit.Location = new System.Drawing.Point(1490, 140);
+            this.btnedit.Name = "btnedit";
+            this.btnedit.Size = new System.Drawing.Size(75, 23);
+            this.btnedit.TabIndex = 42;
+            this.btnedit.Text = "Edit";
+            this.btnedit.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // btnDelete
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(37, 30);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 20);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Donor";
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelete.Location = new System.Drawing.Point(1490, 210);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 41;
+            this.btnDelete.Text = "DELETE";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // btnadd
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(35, 445);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Events";
+            this.btnadd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnadd.Location = new System.Drawing.Point(1490, 73);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(75, 23);
+            this.btnadd.TabIndex = 38;
+            this.btnadd.Text = "Add New";
+            this.btnadd.UseVisualStyleBackColor = true;
             // 
-            // USERNAME
+            // dataGridView1
             // 
-            this.USERNAME.AutoSize = true;
-            this.USERNAME.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.USERNAME.ForeColor = System.Drawing.Color.White;
-            this.USERNAME.Location = new System.Drawing.Point(30, 263);
-            this.USERNAME.Name = "USERNAME";
-            this.USERNAME.Size = new System.Drawing.Size(67, 20);
-            this.USERNAME.TabIndex = 1;
-            this.USERNAME.Text = "Hospitals";
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(8, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 29;
+            this.dataGridView1.Size = new System.Drawing.Size(799, 518);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.panel1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage2.Size = new System.Drawing.Size(941, 553);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Add Patient";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Red;
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Controls.Add(this.txtid);
+            this.panel1.Controls.Add(this.lblid);
+            this.panel1.Controls.Add(this.btncancle);
+            this.panel1.Controls.Add(this.txtbagno);
+            this.panel1.Controls.Add(this.lblbagno);
+            this.panel1.Controls.Add(this.btnSave);
+            this.panel1.Controls.Add(this.txtdateofReceivinigblood);
+            this.panel1.Controls.Add(this.lblDateofReceivinig);
+            this.panel1.Controls.Add(this.cmbGender);
+            this.panel1.Controls.Add(this.lblGender);
+            this.panel1.Controls.Add(this.txtAge);
+            this.panel1.Controls.Add(this.txtPhoneNo);
+            this.panel1.Controls.Add(this.txtAddress);
+            this.panel1.Controls.Add(this.txtname);
+            this.panel1.Controls.Add(this.lblBloodGroup);
+            this.panel1.Controls.Add(this.cmbBloodGroup);
+            this.panel1.Controls.Add(this.lblAge);
+            this.panel1.Controls.Add(this.lblPhoneNo);
+            this.panel1.Controls.Add(this.lblAddress);
+            this.panel1.Controls.Add(this.lblName);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(949, 48);
-            this.panel1.TabIndex = 3;
+            this.panel1.Size = new System.Drawing.Size(935, 549);
+            this.panel1.TabIndex = 0;
             // 
-            // label4
+            // txtid
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(260, 23);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Blood Bank Management System";
+            this.txtid.Location = new System.Drawing.Point(42, 61);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(208, 23);
+            this.txtid.TabIndex = 43;
             // 
-            // txtName
+            // lblid
             // 
-            this.txtName.Location = new System.Drawing.Point(340, 132);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(208, 23);
-            this.txtName.TabIndex = 11;
+            this.lblid.AutoSize = true;
+            this.lblid.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblid.Location = new System.Drawing.Point(42, 28);
+            this.lblid.Name = "lblid";
+            this.lblid.Size = new System.Drawing.Size(25, 21);
+            this.lblid.TabIndex = 42;
+            this.lblid.Text = "ID";
             // 
-            // lblName
+            // btncancle
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblName.Location = new System.Drawing.Point(220, 135);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(52, 21);
-            this.lblName.TabIndex = 12;
-            this.lblName.Text = "Name";
+            this.btncancle.Location = new System.Drawing.Point(496, 390);
+            this.btncancle.Name = "btncancle";
+            this.btncancle.Size = new System.Drawing.Size(75, 23);
+            this.btncancle.TabIndex = 41;
+            this.btncancle.Text = "CANCLE";
+            this.btncancle.UseVisualStyleBackColor = true;
             // 
-            // lblBloodGroup
+            // txtbagno
             // 
-            this.lblBloodGroup.AutoSize = true;
-            this.lblBloodGroup.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblBloodGroup.Location = new System.Drawing.Point(621, 267);
-            this.lblBloodGroup.Name = "lblBloodGroup";
-            this.lblBloodGroup.Size = new System.Drawing.Size(98, 21);
-            this.lblBloodGroup.TabIndex = 13;
-            this.lblBloodGroup.Text = "Blood Group";
+            this.txtbagno.Location = new System.Drawing.Point(283, 299);
+            this.txtbagno.Name = "txtbagno";
+            this.txtbagno.Size = new System.Drawing.Size(210, 23);
+            this.txtbagno.TabIndex = 39;
+            // 
+            // lblbagno
+            // 
+            this.lblbagno.AutoSize = true;
+            this.lblbagno.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblbagno.Location = new System.Drawing.Point(289, 258);
+            this.lblbagno.Name = "lblbagno";
+            this.lblbagno.Size = new System.Drawing.Size(61, 21);
+            this.lblbagno.TabIndex = 38;
+            this.lblbagno.Text = "Bag No";
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(241, 390);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 37;
+            this.btnSave.Text = "SAVE";
+            this.btnSave.UseVisualStyleBackColor = true;
+            // 
+            // txtdateofReceivinigblood
+            // 
+            this.txtdateofReceivinigblood.Location = new System.Drawing.Point(543, 298);
+            this.txtdateofReceivinigblood.Name = "txtdateofReceivinigblood";
+            this.txtdateofReceivinigblood.Size = new System.Drawing.Size(199, 23);
+            this.txtdateofReceivinigblood.TabIndex = 36;
+            // 
+            // lblDateofReceivinig
+            // 
+            this.lblDateofReceivinig.AutoSize = true;
+            this.lblDateofReceivinig.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDateofReceivinig.Location = new System.Drawing.Point(543, 252);
+            this.lblDateofReceivinig.Name = "lblDateofReceivinig";
+            this.lblDateofReceivinig.Size = new System.Drawing.Size(175, 21);
+            this.lblDateofReceivinig.TabIndex = 35;
+            this.lblDateofReceivinig.Text = "Date of Receiving Blood";
+            // 
+            // cmbGender
+            // 
+            this.cmbGender.FormattingEnabled = true;
+            this.cmbGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cmbGender.Location = new System.Drawing.Point(42, 299);
+            this.cmbGender.Name = "cmbGender";
+            this.cmbGender.Size = new System.Drawing.Size(208, 23);
+            this.cmbGender.TabIndex = 34;
             // 
             // lblGender
             // 
             this.lblGender.AutoSize = true;
             this.lblGender.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblGender.Location = new System.Drawing.Point(621, 195);
+            this.lblGender.Location = new System.Drawing.Point(42, 252);
             this.lblGender.Name = "lblGender";
             this.lblGender.Size = new System.Drawing.Size(61, 21);
-            this.lblGender.TabIndex = 14;
+            this.lblGender.TabIndex = 33;
             this.lblGender.Text = "Gender";
             // 
-            // lblPhoneNo
+            // txtAge
             // 
-            this.lblPhoneNo.AutoSize = true;
-            this.lblPhoneNo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPhoneNo.Location = new System.Drawing.Point(621, 134);
-            this.lblPhoneNo.Name = "lblPhoneNo";
-            this.lblPhoneNo.Size = new System.Drawing.Size(82, 21);
-            this.lblPhoneNo.TabIndex = 15;
-            this.lblPhoneNo.Text = "Phone No.";
+            this.txtAge.Location = new System.Drawing.Point(42, 188);
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(208, 23);
+            this.txtAge.TabIndex = 32;
+            // 
+            // txtPhoneNo
+            // 
+            this.txtPhoneNo.Location = new System.Drawing.Point(534, 188);
+            this.txtPhoneNo.Name = "txtPhoneNo";
+            this.txtPhoneNo.Size = new System.Drawing.Size(208, 23);
+            this.txtPhoneNo.TabIndex = 31;
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(534, 61);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(208, 23);
+            this.txtAddress.TabIndex = 30;
+            // 
+            // txtname
+            // 
+            this.txtname.Location = new System.Drawing.Point(285, 61);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(208, 23);
+            this.txtname.TabIndex = 29;
+            // 
+            // lblBloodGroup
+            // 
+            this.lblBloodGroup.AutoSize = true;
+            this.lblBloodGroup.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblBloodGroup.Location = new System.Drawing.Point(285, 140);
+            this.lblBloodGroup.Name = "lblBloodGroup";
+            this.lblBloodGroup.Size = new System.Drawing.Size(98, 21);
+            this.lblBloodGroup.TabIndex = 28;
+            this.lblBloodGroup.Text = "Blood Group";
+            // 
+            // cmbBloodGroup
+            // 
+            this.cmbBloodGroup.FormattingEnabled = true;
+            this.cmbBloodGroup.Items.AddRange(new object[] {
+            "A+",
+            "A-",
+            "B+",
+            "B-",
+            "O+",
+            "O-",
+            "AB+",
+            "AB-"});
+            this.cmbBloodGroup.Location = new System.Drawing.Point(285, 188);
+            this.cmbBloodGroup.Name = "cmbBloodGroup";
+            this.cmbBloodGroup.Size = new System.Drawing.Size(208, 23);
+            this.cmbBloodGroup.TabIndex = 27;
             // 
             // lblAge
             // 
             this.lblAge.AutoSize = true;
             this.lblAge.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAge.Location = new System.Drawing.Point(220, 267);
+            this.lblAge.Location = new System.Drawing.Point(42, 140);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(37, 21);
-            this.lblAge.TabIndex = 16;
+            this.lblAge.TabIndex = 26;
             this.lblAge.Text = "Age";
+            // 
+            // lblPhoneNo
+            // 
+            this.lblPhoneNo.AutoSize = true;
+            this.lblPhoneNo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPhoneNo.Location = new System.Drawing.Point(534, 153);
+            this.lblPhoneNo.Name = "lblPhoneNo";
+            this.lblPhoneNo.Size = new System.Drawing.Size(82, 21);
+            this.lblPhoneNo.TabIndex = 25;
+            this.lblPhoneNo.Text = "Phone No.";
             // 
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAddress.Location = new System.Drawing.Point(220, 195);
+            this.lblAddress.Location = new System.Drawing.Point(534, 28);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(66, 21);
-            this.lblAddress.TabIndex = 17;
+            this.lblAddress.TabIndex = 24;
             this.lblAddress.Text = "Address";
             // 
-            // lblBagNo
+            // lblName
             // 
-            this.lblBagNo.AutoSize = true;
-            this.lblBagNo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblBagNo.Location = new System.Drawing.Point(621, 337);
-            this.lblBagNo.Name = "lblBagNo";
-            this.lblBagNo.Size = new System.Drawing.Size(64, 21);
-            this.lblBagNo.TabIndex = 18;
-            this.lblBagNo.Text = "Bag No.";
-            // 
-            // lblDateOfReceivingBlood
-            // 
-            this.lblDateOfReceivingBlood.AutoSize = true;
-            this.lblDateOfReceivingBlood.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDateOfReceivingBlood.Location = new System.Drawing.Point(184, 356);
-            this.lblDateOfReceivingBlood.Name = "lblDateOfReceivingBlood";
-            this.lblDateOfReceivingBlood.Size = new System.Drawing.Size(178, 21);
-            this.lblDateOfReceivingBlood.TabIndex = 19;
-            this.lblDateOfReceivingBlood.Text = "Date Of Receiving Blood";
-            // 
-            // txtAddress
-            // 
-            this.txtAddress.Location = new System.Drawing.Point(340, 197);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(208, 23);
-            this.txtAddress.TabIndex = 20;
-            // 
-            // txtAge
-            // 
-            this.txtAge.Location = new System.Drawing.Point(307, 269);
-            this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(208, 23);
-            this.txtAge.TabIndex = 21;
-            // 
-            // txtDateOfReceivingBlood
-            // 
-            this.txtDateOfReceivingBlood.Location = new System.Drawing.Point(368, 358);
-            this.txtDateOfReceivingBlood.Name = "txtDateOfReceivingBlood";
-            this.txtDateOfReceivingBlood.Size = new System.Drawing.Size(208, 23);
-            this.txtDateOfReceivingBlood.TabIndex = 22;
-            // 
-            // txtPhoneNo
-            // 
-            this.txtPhoneNo.Location = new System.Drawing.Point(709, 132);
-            this.txtPhoneNo.Name = "txtPhoneNo";
-            this.txtPhoneNo.Size = new System.Drawing.Size(208, 23);
-            this.txtPhoneNo.TabIndex = 23;
-            // 
-            // txtBagNo
-            // 
-            this.txtBagNo.Location = new System.Drawing.Point(691, 339);
-            this.txtBagNo.Name = "txtBagNo";
-            this.txtBagNo.Size = new System.Drawing.Size(208, 23);
-            this.txtBagNo.TabIndex = 24;
-            // 
-            // cmbGender
-            // 
-            this.cmbGender.FormattingEnabled = true;
-            this.cmbGender.Location = new System.Drawing.Point(709, 197);
-            this.cmbGender.Name = "cmbGender";
-            this.cmbGender.Size = new System.Drawing.Size(124, 23);
-            this.cmbGender.TabIndex = 25;
-            // 
-            // cmbBloodGroup
-            // 
-            this.cmbBloodGroup.FormattingEnabled = true;
-            this.cmbBloodGroup.Location = new System.Drawing.Point(760, 267);
-            this.cmbBloodGroup.Name = "cmbBloodGroup";
-            this.cmbBloodGroup.Size = new System.Drawing.Size(124, 23);
-            this.cmbBloodGroup.TabIndex = 26;
-            // 
-            // btnSubmit
-            // 
-            this.btnSubmit.Location = new System.Drawing.Point(502, 479);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
-            this.btnSubmit.TabIndex = 27;
-            this.btnSubmit.Text = "Submit";
-            this.btnSubmit.UseVisualStyleBackColor = true;
-            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblName.Location = new System.Drawing.Point(283, 28);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(52, 21);
+            this.lblName.TabIndex = 23;
+            this.lblName.Text = "Name";
             // 
             // Patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(949, 581);
-            this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.cmbBloodGroup);
-            this.Controls.Add(this.cmbGender);
-            this.Controls.Add(this.txtBagNo);
-            this.Controls.Add(this.txtPhoneNo);
-            this.Controls.Add(this.txtDateOfReceivingBlood);
-            this.Controls.Add(this.txtAge);
-            this.Controls.Add(this.txtAddress);
-            this.Controls.Add(this.lblDateOfReceivingBlood);
-            this.Controls.Add(this.lblBagNo);
-            this.Controls.Add(this.lblAddress);
-            this.Controls.Add(this.lblAge);
-            this.Controls.Add(this.lblPhoneNo);
-            this.Controls.Add(this.lblGender);
-            this.Controls.Add(this.lblBloodGroup);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Patient";
             this.Text = "Patient";
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label USERNAME;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Button btnedit;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnadd;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Label lblBloodGroup;
-        private System.Windows.Forms.Label lblGender;
-        private System.Windows.Forms.Label lblPhoneNo;
-        private System.Windows.Forms.Label lblAge;
-        private System.Windows.Forms.Label lblAddress;
-        private System.Windows.Forms.Label lblBagNo;
-        private System.Windows.Forms.Label lblDateOfReceivingBlood;
-        private System.Windows.Forms.TextBox txtAddress;
-        private System.Windows.Forms.TextBox txtAge;
-        private System.Windows.Forms.TextBox txtDateOfReceivingBlood;
-        private System.Windows.Forms.TextBox txtPhoneNo;
-        private System.Windows.Forms.TextBox txtBagNo;
+        private System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.Label lblid;
+        private System.Windows.Forms.Button btncancle;
+        private System.Windows.Forms.TextBox txtbagno;
+        private System.Windows.Forms.Label lblbagno;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.TextBox txtdateofReceivinigblood;
+        private System.Windows.Forms.Label lblDateofReceivinig;
         private System.Windows.Forms.ComboBox cmbGender;
+        private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.TextBox txtPhoneNo;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtname;
+        private System.Windows.Forms.Label lblBloodGroup;
         private System.Windows.Forms.ComboBox cmbBloodGroup;
-        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Label lblAge;
+        private System.Windows.Forms.Label lblPhoneNo;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

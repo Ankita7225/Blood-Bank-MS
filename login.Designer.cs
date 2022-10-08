@@ -30,134 +30,165 @@ namespace Blood_Bank_MS
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblUsername = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.btnnewregister = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lbltitle = new System.Windows.Forms.Label();
+            this.PBuser = new System.Windows.Forms.PictureBox();
+            this.PBpassword = new System.Windows.Forms.PictureBox();
+            this.CBshowpassword = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBuser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBpassword)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Blood_Bank_MS.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(120, 78);
+            this.pictureBox1.Location = new System.Drawing.Point(148, 81);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(96, 96);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(80, 197);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 45);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Blood Bank";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(80, 240);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Management System";
-            // 
-            // lblUsername
-            // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUsername.Location = new System.Drawing.Point(342, 84);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(81, 21);
-            this.lblUsername.TabIndex = 3;
-            this.lblUsername.Text = "Username";
-            this.lblUsername.Click += new System.EventHandler(this.lblUsername_Click);
-            // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPassword.Location = new System.Drawing.Point(342, 176);
+            this.lblPassword.Location = new System.Drawing.Point(19, 214);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(76, 21);
+            this.lblPassword.Size = new System.Drawing.Size(0, 21);
             this.lblPassword.TabIndex = 4;
-            this.lblPassword.Text = "Password";
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(342, 126);
+            this.txtUsername.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtUsername.Location = new System.Drawing.Point(73, 223);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(246, 23);
             this.txtUsername.TabIndex = 5;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(342, 213);
+            this.txtPassword.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtPassword.Location = new System.Drawing.Point(76, 287);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(246, 23);
             this.txtPassword.TabIndex = 6;
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnLogin.BackgroundImage = global::Blood_Bank_MS.Properties.Resources.background1;
+            this.btnLogin.BackColor = System.Drawing.Color.Transparent;
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(342, 276);
+            this.btnLogin.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnLogin.Location = new System.Drawing.Point(148, 364);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(90, 45);
+            this.btnLogin.Size = new System.Drawing.Size(96, 37);
             this.btnLogin.TabIndex = 7;
-            this.btnLogin.Text = "Login";
+            this.btnLogin.Text = "LOGIN";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // btnExit
+            // btnnewregister
             // 
-            this.btnExit.BackColor = System.Drawing.Color.DimGray;
-            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(462, 276);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(90, 45);
-            this.btnExit.TabIndex = 8;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnnewregister.BackColor = System.Drawing.Color.Transparent;
+            this.btnnewregister.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnnewregister.FlatAppearance.BorderSize = 0;
+            this.btnnewregister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnnewregister.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnnewregister.ForeColor = System.Drawing.Color.Transparent;
+            this.btnnewregister.Location = new System.Drawing.Point(208, 449);
+            this.btnnewregister.Name = "btnnewregister";
+            this.btnnewregister.Size = new System.Drawing.Size(203, 44);
+            this.btnnewregister.TabIndex = 8;
+            this.btnnewregister.Text = "New Register";
+            this.btnnewregister.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.panel1.Controls.Add(this.lbltitle);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(371, 58);
+            this.panel1.TabIndex = 9;
+            // 
+            // lbltitle
+            // 
+            this.lbltitle.AutoSize = true;
+            this.lbltitle.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbltitle.ForeColor = System.Drawing.Color.Transparent;
+            this.lbltitle.Location = new System.Drawing.Point(80, 20);
+            this.lbltitle.Name = "lbltitle";
+            this.lbltitle.Size = new System.Drawing.Size(244, 25);
+            this.lbltitle.TabIndex = 0;
+            this.lbltitle.Text = "LOGIN TO YOUR ACCOUNT";
+            // 
+            // PBuser
+            // 
+            this.PBuser.Image = global::Blood_Bank_MS.Properties.Resources.user;
+            this.PBuser.Location = new System.Drawing.Point(22, 219);
+            this.PBuser.Name = "PBuser";
+            this.PBuser.Size = new System.Drawing.Size(30, 30);
+            this.PBuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PBuser.TabIndex = 10;
+            this.PBuser.TabStop = false;
+            // 
+            // PBpassword
+            // 
+            this.PBpassword.Image = global::Blood_Bank_MS.Properties.Resources._lock;
+            this.PBpassword.Location = new System.Drawing.Point(26, 284);
+            this.PBpassword.Name = "PBpassword";
+            this.PBpassword.Size = new System.Drawing.Size(30, 30);
+            this.PBpassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PBpassword.TabIndex = 11;
+            this.PBpassword.TabStop = false;
+            // 
+            // CBshowpassword
+            // 
+            this.CBshowpassword.AutoSize = true;
+            this.CBshowpassword.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.CBshowpassword.Location = new System.Drawing.Point(215, 325);
+            this.CBshowpassword.Name = "CBshowpassword";
+            this.CBshowpassword.Size = new System.Drawing.Size(108, 19);
+            this.CBshowpassword.TabIndex = 12;
+            this.CBshowpassword.Text = "Show Password";
+            this.CBshowpassword.UseVisualStyleBackColor = true;
             // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(711, 351);
-            this.Controls.Add(this.btnExit);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(43)))), ((int)(((byte)(46)))));
+            this.ClientSize = new System.Drawing.Size(371, 496);
+            this.Controls.Add(this.CBshowpassword);
+            this.Controls.Add(this.PBpassword);
+            this.Controls.Add(this.PBuser);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnnewregister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.lblUsername);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "login";
             this.Load += new System.EventHandler(this.login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBuser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBpassword)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,14 +197,16 @@ namespace Blood_Bank_MS
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnnewregister;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lbltitle;
+        private System.Windows.Forms.PictureBox PBuser;
+        private System.Windows.Forms.PictureBox PBpassword;
+        private System.Windows.Forms.CheckBox CBshowpassword;
     }
 }
 

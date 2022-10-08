@@ -124,14 +124,14 @@ namespace Blood_Bank_MS
                     fillGrid();
                     tabControl1.TabPages.Remove(tabPage2);
                     tabControl1.TabPages.Add(tabPage1);
-                    SqlCommand cmd2 = new SqlCommand("Select bloodSt from BStock where BloodGroup='" + cmbBloodGroup.Text + "'", con);
+                    //SqlCommand cmd2 = new SqlCommand("Select bloodSt from BStock where BloodGroup='" + cmbBloodGroup.Text + "'", con);
 
-                    SqlDataReader reader = cmd2.ExecuteReader();
-                    int Stock = (int)reader[0];
-                    Stock += Convert.ToInt32(cmbBloodGroup.Text);
+                    //SqlDataReader reader = cmd2.ExecuteReader();
+                    ////int Stock = (int)reader[0];
+                    ////Stock += Convert.ToInt32(cmbBloodGroup.Text);
 
-                    cmd2 = new SqlCommand($"Update BStock set BloodSt={Stock} where BloodGroup='" + cmbBloodGroup.Text + "'", con);
-                    cmd2.ExecuteNonQuery();
+                    ////cmd2 = new SqlCommand($"Update BStock set BloodSt={Stock} where BloodGroup='" + cmbBloodGroup.Text + "'", con);
+                    ////cmd2.ExecuteNonQuery();
 
 
 
@@ -160,7 +160,7 @@ namespace Blood_Bank_MS
 
                         }
 
-                        SqlCommand cmd = new SqlCommand("insert into Donor values(' " + txtName.Text + " ',' " + txtAddress.Text + " ','" + cmbBloodGroup.Text + "','" + txtPhoneNo.Text + "','" + txtAge.Text + "','" + cmbGender.Text + "',' " + txtTotalDonation.Text + " ','" + txtDate.Text + "')", con);
+                        SqlCommand cmd = new SqlCommand("insert into Donor values(' " + txtName.Text + " ',' " + txtAddress.Text + " ','" + txtAge.Text + "','" + cmbBloodGroup.Text + "',' " + txtTotalDonation.Text + " ','" + cmbGender.Text + "','" + txtPhoneNo.Text + "','" + txtDate.Text + "')", con);
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Successfully Saved");
                         con.Close();
@@ -194,21 +194,129 @@ namespace Blood_Bank_MS
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+
+
             try
             {
 
-                SqlCommand cmd = new SqlCommand("Delete from Donor values(' " + txtName.Text + " ',' " + txtAddress.Text + " ','" + cmbBloodGroup.Text + "','" + txtPhoneNo.Text + "','" + txtAge.Text + "','" + cmbGender.Text + "',' " + txtTotalDonation.Text + " ','" + txtDate.Text + "')", con);
+                SqlCommand cmd = new SqlCommand("Delete from Donor where ID= '" + dataGridView1.SelectedRows[0].Cells[0].Value + "' ", con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("data deleted");
                 con.Close();
                 fillGrid();
-                tabControl1.TabPages.Remove(tabPage2);
-                tabControl1.TabPages.Add(tabPage1);
+                
             }
             catch
             {
                 MessageBox.Show("not deleted");
             }
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtid_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblid_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTotalDonation_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTotalDonations_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbGender_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblGender_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAge_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPhoneNo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblBloodGroup_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbBloodGroup_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAge_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+        private void lblAddress_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Donor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

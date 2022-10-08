@@ -75,6 +75,7 @@ namespace Blood_Bank_MS
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(855, 524);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -90,6 +91,7 @@ namespace Blood_Bank_MS
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Donor Details";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // btnedit
             // 
@@ -153,6 +155,7 @@ namespace Blood_Bank_MS
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Add Donor";
             this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // panel1
             // 
@@ -182,6 +185,7 @@ namespace Blood_Bank_MS
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(841, 492);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txtid
             // 
@@ -189,6 +193,7 @@ namespace Blood_Bank_MS
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(208, 23);
             this.txtid.TabIndex = 43;
+            this.txtid.TextChanged += new System.EventHandler(this.txtid_TextChanged);
             // 
             // lblid
             // 
@@ -199,6 +204,7 @@ namespace Blood_Bank_MS
             this.lblid.Size = new System.Drawing.Size(25, 21);
             this.lblid.TabIndex = 42;
             this.lblid.Text = "ID";
+            this.lblid.Click += new System.EventHandler(this.lblid_Click);
             // 
             // btncancle
             // 
@@ -216,6 +222,7 @@ namespace Blood_Bank_MS
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(210, 23);
             this.txtDate.TabIndex = 39;
+            this.txtDate.TextChanged += new System.EventHandler(this.txtDate_TextChanged);
             // 
             // lblDate
             // 
@@ -226,6 +233,7 @@ namespace Blood_Bank_MS
             this.lblDate.Size = new System.Drawing.Size(128, 21);
             this.lblDate.TabIndex = 38;
             this.lblDate.Text = "Date of Donation";
+            this.lblDate.Click += new System.EventHandler(this.lblDate_Click);
             // 
             // btnSave
             // 
@@ -243,6 +251,7 @@ namespace Blood_Bank_MS
             this.txtTotalDonation.Name = "txtTotalDonation";
             this.txtTotalDonation.Size = new System.Drawing.Size(124, 23);
             this.txtTotalDonation.TabIndex = 36;
+            this.txtTotalDonation.TextChanged += new System.EventHandler(this.txtTotalDonation_TextChanged);
             // 
             // lblTotalDonations
             // 
@@ -253,6 +262,7 @@ namespace Blood_Bank_MS
             this.lblTotalDonations.Size = new System.Drawing.Size(117, 21);
             this.lblTotalDonations.TabIndex = 35;
             this.lblTotalDonations.Text = "Total Donations";
+            this.lblTotalDonations.Click += new System.EventHandler(this.lblTotalDonations_Click);
             // 
             // cmbGender
             // 
@@ -264,6 +274,7 @@ namespace Blood_Bank_MS
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Size = new System.Drawing.Size(124, 23);
             this.cmbGender.TabIndex = 34;
+            this.cmbGender.SelectedIndexChanged += new System.EventHandler(this.cmbGender_SelectedIndexChanged);
             // 
             // lblGender
             // 
@@ -274,6 +285,7 @@ namespace Blood_Bank_MS
             this.lblGender.Size = new System.Drawing.Size(61, 21);
             this.lblGender.TabIndex = 33;
             this.lblGender.Text = "Gender";
+            this.lblGender.Click += new System.EventHandler(this.lblGender_Click);
             // 
             // txtAge
             // 
@@ -281,6 +293,7 @@ namespace Blood_Bank_MS
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(134, 23);
             this.txtAge.TabIndex = 32;
+            this.txtAge.TextChanged += new System.EventHandler(this.txtAge_TextChanged);
             // 
             // txtPhoneNo
             // 
@@ -288,6 +301,7 @@ namespace Blood_Bank_MS
             this.txtPhoneNo.Name = "txtPhoneNo";
             this.txtPhoneNo.Size = new System.Drawing.Size(208, 23);
             this.txtPhoneNo.TabIndex = 31;
+            this.txtPhoneNo.TextChanged += new System.EventHandler(this.txtPhoneNo_TextChanged);
             // 
             // txtAddress
             // 
@@ -295,6 +309,7 @@ namespace Blood_Bank_MS
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(208, 23);
             this.txtAddress.TabIndex = 30;
+            this.txtAddress.TextChanged += new System.EventHandler(this.txtAddress_TextChanged);
             // 
             // txtName
             // 
@@ -313,6 +328,7 @@ namespace Blood_Bank_MS
             this.lblBloodGroup.Size = new System.Drawing.Size(98, 21);
             this.lblBloodGroup.TabIndex = 28;
             this.lblBloodGroup.Text = "Blood Group";
+            this.lblBloodGroup.Click += new System.EventHandler(this.lblBloodGroup_Click);
             // 
             // cmbBloodGroup
             // 
@@ -330,6 +346,7 @@ namespace Blood_Bank_MS
             this.cmbBloodGroup.Name = "cmbBloodGroup";
             this.cmbBloodGroup.Size = new System.Drawing.Size(208, 23);
             this.cmbBloodGroup.TabIndex = 27;
+            this.cmbBloodGroup.SelectedIndexChanged += new System.EventHandler(this.cmbBloodGroup_SelectedIndexChanged);
             // 
             // lblAge
             // 
@@ -340,6 +357,7 @@ namespace Blood_Bank_MS
             this.lblAge.Size = new System.Drawing.Size(37, 21);
             this.lblAge.TabIndex = 26;
             this.lblAge.Text = "Age";
+            this.lblAge.Click += new System.EventHandler(this.lblAge_Click);
             // 
             // lblPhoneNo
             // 
@@ -350,6 +368,7 @@ namespace Blood_Bank_MS
             this.lblPhoneNo.Size = new System.Drawing.Size(82, 21);
             this.lblPhoneNo.TabIndex = 25;
             this.lblPhoneNo.Text = "Phone No.";
+         
             // 
             // lblAddress
             // 
@@ -360,6 +379,7 @@ namespace Blood_Bank_MS
             this.lblAddress.Size = new System.Drawing.Size(66, 21);
             this.lblAddress.TabIndex = 24;
             this.lblAddress.Text = "Address";
+            this.lblAddress.Click += new System.EventHandler(this.lblAddress_Click);
             // 
             // lblName
             // 
@@ -370,6 +390,7 @@ namespace Blood_Bank_MS
             this.lblName.Size = new System.Drawing.Size(52, 21);
             this.lblName.TabIndex = 23;
             this.lblName.Text = "Name";
+            this.lblName.Click += new System.EventHandler(this.lblName_Click);
             // 
             // Donor
             // 
@@ -381,6 +402,7 @@ namespace Blood_Bank_MS
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Donor";
             this.Text = "Donor";
+            this.Load += new System.EventHandler(this.Donor_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

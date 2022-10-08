@@ -4,7 +4,6 @@ C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Hospital.resources
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.login.resources
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Patient.resources
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.Properties.Resources.resources
-C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.splash.resources
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.csproj.GenerateResource.cache
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.GeneratedMSBuildEditorConfig.editorconfig
 C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood Bank MS.AssemblyInfoInputs.cache
@@ -55,3 +54,4 @@ C:\Blood Bank MS\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
 C:\Blood Bank MS\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Blood Bank MS\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Blood Bank MS\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Blood Bank MS\obj\Debug\netcoreapp3.1\Blood_Bank_MS.New_login.resources
